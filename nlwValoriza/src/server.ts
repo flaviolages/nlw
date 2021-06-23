@@ -14,6 +14,22 @@ const app = express();
  */
 
 
+/**
+ * Tipos de parâmetros
+ * 
+ * REQUISIÇÃO GET, PUT
+ * Routes Params => http://localhost:3000/produtos/3798248973284 "!ID por exemplo"
+ * Query Params => http://localhost:3000/produtos?name=teclado
+ * 
+ * 
+ * REQUISIÇÃO POST
+ * BOdy Params => {
+ *  "name": "teclado",
+ *  "description": "teclado" 
+ * }
+ * 
+ */
+
 app.get("/test", (request, response) => {
     // Request => Entrando
     // Response => Saindo
